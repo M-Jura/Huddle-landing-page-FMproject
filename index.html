@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;  
+      background-color: hsl(257, 40%, 49%);
+      background-image: url(images/bg-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+      color: #fff;
+        
+    }
+
+    .page-container {
+      padding: 4rem;
+      height: 100vh;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      margin-bottom: 3rem;
+    }
+
+    .main-container {
+      display: flex;
+      margin: 6rem 0;
+      
+    }
+
+    .img-section {      
+      flex: 60%;
+      padding-right: 2rem;
+    }
+
+    .content-section {
+      flex: 40%;
+      margin-top: 3rem;
+      padding-left: 2rem;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;      
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+
+    .btn {
+      background-color: #fff;
+      width: 180px;
+      text-align: center;
+      border-radius: 25px;
+      margin-top: 2rem;
+    }
+
+    .btn:hover {
+      background-color: hsl(300, 69%, 71%);
+    }
+
+    .btn a {
+      display: block;
+      text-decoration: none;
+      padding: 0.7rem 1rem;
+      color: hsl(257, 40%, 49%);
+    }
+
+    .btn a:hover {
+      color: #fff; 
+    }
+    .icons-social {
+      text-align: right;
+    }
+
+    .icons-social span {
+      position: relative;
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      border: 2px solid #fff;
+      border-radius: 20px;
+    }
+
+    .icons-social span:hover {
+      border-color: hsl(300, 69%, 71%);
+    }
+
+    .icons-social span img {
+      position: relative;
+      top: 6px;
+      left: -6px;     
+      width: 24px;
+      height: 24px;
+     
+    }
+
+    @media only screen and (max-width: 1240px){
+
+      body { 
+      background-image: url(images/bg-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: top;
+            
+        
+    }
+
+      .page-container {        
+       min-width: 375px;
+       padding: 2rem;
+        
+      }
+
+      .main-container {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .img-section img {
+      max-width: 100%;
+    }
+
+    .content-section {
+      padding-left: 0;
+    }
+
+    .icons-social {
+      text-align: center;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    h1 {       
+      font-size: 2rem;      
+    }
+
+    .btn {
+      margin: 2rem auto;
+    }
+
+    .icons-social {
+      margin-bottom: 2rem;
+     
+    }
+
+    .icons-social span img {
+      position: relative;
+      top: 6px;
+      left: 0px;     
+      width: 24px;
+      height: 24px;
+     
+    }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="page-container">
+  <nav>
+    <div class="logo">
+      <a href="#"><img src="images/logo.svg" alt="logo"></a>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <div class="img-section">
+      <img src="images/illustration-mockups.svg" alt="mockup">
+    </div>
+    <div class="content-section">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>
+      Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+      Create connections with your users as you engage in genuine discussion. 
+      </p>
+
+      <div class="btn"><a href="#">Register</a></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="icons-social">     
+      <span><img src="images/facebook-f-brands.svg" alt="facebook"></span>
+      <span><img src="images/twitter-brands.svg" alt="twitter"></span>
+      <span><img src="images/instagram-brands.svg" alt="instagram"></span>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Matija Jurkovic</a>.
+    </p>
+  </footer>
+  </div>
+</body>
+</html>
